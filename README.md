@@ -1,4 +1,5 @@
-# Azure Terraform LabsHands‑on Infrastructure as Code (IaC) labs for Microsoft Azure using Terraform.  This repo is structured like a real‑world DevOps/Platform project to showcase:- Reusable **Terraform modules** (VNet, Storage Account, Log Analytics)- Clear **environments** (starting with `dev`)- A clean path toward **remote backend**, **CI/CD (GitHub Actions)**, and **AKS/GitOps** later> Goal: build demonstrable, production‑style IaC skills for an Azure‑centric DevOps/Platform Engineer role.---## 📦 Repo StructureShow more lines
+# Azure Terraform LabsHands‑on Infrastructure as Code (IaC) labs for Microsoft Azure using Terraform.  
+This repo is structured like a real‑world DevOps/Platform project to showcase:- Reusable **Terraform modules** (VNet, Storage Account, Log Analytics)- Clear **environments** (starting with `dev`)- A clean path toward **remote backend**, **CI/CD (GitHub Actions)**, and **AKS/GitOps** later> Goal: build demonstrable, production‑style IaC skills for an Azure‑centric DevOps/Platform Engineer role.---## 📦 Repo StructureShow more lines
 .
 ├── .gitignore
 ├── modules/
@@ -29,7 +30,8 @@ All resources are deployed via **modules** for composability and testability.
 
 ## 🚀 Local Workflow
 
-### 0) Prereqs
+### 
+0) Prereqs
 - **Azure CLI** installed:
   - macOS: `brew install azure-cli`
   - Linux (Debian/Ubuntu): `curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash`
@@ -55,8 +57,7 @@ Shellterraform destroy# type: yesShow more lines
 
 For learning, apply → validate → destroy is recommended to avoid unexpected costs.
 
-
-🔐 Security & Cost
+## 🔐 Security & Cost
 
 Never commit:
 
@@ -67,41 +68,33 @@ Use Azure CLI auth locally (no hardcoded credentials)
 Keep Basic SKU resources where possible and delete after lab
 Set an Azure Budget (e.g., $15–$20) with alerts
 
-
-🧩 Next Steps (Roadmap)
+## 🧩 Next Steps (Roadmap)
 
 Remote backend (Azure Storage):
 
 Storage Account + container tfstate
 Configure backend in environments/dev/backend.tf (or terraform { backend "azurerm" { ... } })
 
-
-CI/CD with GitHub Actions:
+## CI/CD with GitHub Actions:
 
 Workflow: fmt → init → validate → plan on PRs
 apply on main with manual approval
 
-
-Networking deep dive:
+## Networking deep dive:
 
 second VNet + VNet peering, NSG, NSG flow logs
 Private Endpoint for Storage
 
-
-AKS & GitOps (later):
+## AKS & GitOps (later):
 
 AKS cluster → Helm → Argo CD
 Observability: Prometheus/Grafana via Helm
 
-
-Policies & Governance:
+## Policies & Governance:
 
 Azure Policy (allowed locations, required tags)
 Management Groups, budget guardrails
 
-
-
-
-👤 Author
+## 👤 Author
 Yurii Chahovets — IT System Administrator → Azure‑centric DevOps/Platform Engineer (in progress).
 Seeking remote roles, focusing on IaC, CI/CD, AKS, Observability, Governance.
