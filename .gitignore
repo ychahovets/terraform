@@ -5,6 +5,7 @@
 *.tfvars
 .terraform.lock.hcl
 *.tfplan
+terraform/environments/dev/terraform.tfvars
 
 # Logs
 *.log
