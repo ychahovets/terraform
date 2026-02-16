@@ -1,0 +1,19 @@
+# Terraform local artifacts
+.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfvars
+.terraform.lock.hcl
+*.tfplan
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# Keys / certs (defensive)
+*.pem
+*.key
+*.crt

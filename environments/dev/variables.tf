@@ -1,3 +1,3 @@
 // terraform/environments/dev/variables.tf
-// Оставь пустым, если значения хардкодишь в main.tf.
-// Этот файл нужен, если хочешь вынести значения в terraform.tfvars.
+// Keep empty if you hardcode values in main.tf.
+// This file is used to define variables that are set in terraform.tfvars.

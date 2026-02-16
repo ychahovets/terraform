@@ -1,5 +1,5 @@
 // terraform/environments/dev/terraform.tfvars
-// Пример: если вынес бы параметры
+// Ex: 
 // vnet_name     = "vnet-dev"
 // subnet_name   = "subnet-dev"
 // address_space = ["10.10.0.0/16"]
