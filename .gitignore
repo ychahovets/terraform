@@ -5,7 +5,16 @@
 *.tfvars
 .terraform.lock.hcl
 *.tfplan
-terraform/environments/dev/terraform.tfvars
+# environment-specific tfvars are covered by the general pattern above
+
+# Local override and crash files
+override.tf
+override.tf.json
+crash.log
+
+# Editor and OS files
+.DS_Store
+*.swp
 
 # Logs
 *.log
